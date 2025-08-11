@@ -68,11 +68,11 @@ This project is configured for easy deployment to GitHub Pages using GitHub Acti
 
 3.  **Enable GitHub Pages:**
 
-    -   Go to your GitHub repository.
-    -   Click on **Settings**.
-    -   In the left sidebar, click on **Pages**.
-    -   Under "Build and deployment", select **GitHub Actions** as the source.
-    -   The provided `.github/workflows/deploy.yml` file will automatically handle the build and deployment process whenever you push changes to the `main` branch.
+    - Go to your GitHub repository.
+    - Click on **Settings**.
+    - In the left sidebar, click on **Pages**.
+    - Under "Build and deployment", select **GitHub Actions** as the source.
+    - The provided `.github/workflows/deploy.yml` file will automatically handle the build and deployment process whenever you push changes to the `main` branch.
 
 4.  **Access Your Live Site:**
 
@@ -82,22 +82,21 @@ This project is configured for easy deployment to GitHub Pages using GitHub Acti
 
 ## 🤝 Sharing with Your Team
 
--   **Repository URL**: Share the GitHub repository link (`https://github.com/[your-username]/meeting-dashboard`) with your team members so they can clone the project, contribute, and run it locally.
--   **Live Site URL**: Share the GitHub Pages URL (`https://[your-username].github.io/meeting-dashboard`) for quick access to the live dashboard without needing to set up a local environment.
+- **Repository URL**: Share the GitHub repository link (`https://github.com/[your-username]/meeting-dashboard`) with your team members so they can clone the project, contribute, and run it locally.
+- **Live Site URL**: Share the GitHub Pages URL (`https://[your-username].github.io/meeting-dashboard`) for quick access to the live dashboard without needing to set up a local environment.
 
 ## 🎨 Customization
 
--   **Content**: Modify the `meeting1Data`, `meeting2Data`, `presentationsData`, and `actionItems` arrays in `src/App.jsx` to update the dashboard content.
--   **Styling**: Adjust Tailwind CSS classes in `src/App.jsx` and `src/App.css` for visual changes.
--   **Logo**: Replace `src/assets/Brain-Health-USA-Center_white-png(1).webp` with your desired logo file. Remember to update the import path in `src/App.jsx` if the filename changes.
+- **Content**: Modify the `meeting1Data`, `meeting2Data`, `presentationsData`, and `actionItems` arrays in `src/App.jsx` to update the dashboard content.
+- **Styling**: Adjust Tailwind CSS classes in `src/App.jsx` and `src/App.css` for visual changes.
+- **Logo**: Replace `src/assets/Brain-Health-USA-Center_white-png(1).webp` with your desired logo file. Remember to update the import path in `src/App.jsx` if the filename changes.
 
 ## 🐞 Troubleshooting
 
--   If the site doesn't deploy, check the **Actions** tab in your GitHub repository for any workflow errors.
--   Ensure all dependencies are installed correctly (`pnpm install`).
--   Verify that the `base` path in `vite.config.js` is correctly set to `'/meeting-dashboard/'` for GitHub Pages deployment.
+- If the site doesn't deploy, check the **Actions** tab in your GitHub repository for any workflow errors.
+- Ensure all dependencies are installed correctly (`pnpm install`).
+- Verify that the `base` path in `vite.config.js` is correctly set to `'/meeting-dashboard/'` for GitHub Pages deployment.
 
 ---
 
-**Built with ❤️ by Manus AI**
-
+**Built with ❤️ by Youssef boshra**
