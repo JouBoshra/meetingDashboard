@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button.jsx";
@@ -43,6 +44,9 @@ import {
   Sparkles,
   DollarSign,
   Activity,
+  ClipboardList,
+  Stethoscope,
+  CalendarDays,
 } from "lucide-react";
 import Logo from "./assets/Brain-Health-USA-Center_white-png(1).webp";
 import LoginForm from "./components/ui//LoginForm.jsx";
@@ -247,7 +251,7 @@ function App() {
                 transition={{ delay: 0.6, duration: 0.5 }}
                 className="text-base sm:text-lg text-gray-600 mt-2 flex items-center justify-center gap-2"
               >
-                July 2025 Meetings Summary 🗓️
+                Brain Health Meeting Hub , Where Every Meeting Drives Progress.
               </motion.p>
             </div>
           </div>
@@ -291,7 +295,7 @@ function App() {
                     variant="secondary"
                     className="ml-1 bg-orange-100 text-orange-600 text-xs px-1 py-0 h-4 min-w-[16px] flex items-center justify-center"
                   >
-                    5
+                    12
                   </Badge>
                 </TabsTrigger>
                 <TabsTrigger
@@ -307,7 +311,7 @@ function App() {
                     variant="secondary"
                     className="ml-1 bg-teal-100 text-teal-600 text-xs px-1 py-0 h-4 min-w-[16px] flex items-center justify-center"
                   >
-                    7
+                    11
                   </Badge>
                 </TabsTrigger>
                 <TabsTrigger
@@ -323,7 +327,7 @@ function App() {
                     variant="secondary"
                     className="ml-1 bg-pink-100 text-pink-600 text-xs px-1 py-0 h-4 min-w-[16px] flex items-center justify-center"
                   >
-                    8
+                    38
                   </Badge>
                 </TabsTrigger>
               </TabsList>
@@ -349,7 +353,7 @@ function App() {
                           <p className="text-sm font-medium text-gray-600">
                             Total Meetings
                           </p>
-                          <p className="text-3xl font-bold text-blue-600">5</p>
+                          <p className="text-3xl font-bold text-blue-600">12</p>
                         </div>
                         <Calendar className="h-8 w-8 text-blue-500" />
                       </div>
@@ -366,7 +370,7 @@ function App() {
                             Total Attendees
                           </p>
                           <p className="text-3xl font-bold text-green-600">
-                            19
+                            21
                           </p>
                         </div>
                         <Users className="h-8 w-8 text-green-500" />
@@ -384,7 +388,7 @@ function App() {
                             Key Points
                           </p>
                           <p className="text-3xl font-bold text-orange-600">
-                            15
+                            38
                           </p>
                         </div>
                         <FileText className="h-8 w-8 text-orange-500" />
@@ -402,7 +406,7 @@ function App() {
                             Presentations
                           </p>
                           <p className="text-3xl font-bold text-purple-600">
-                            6
+                            11
                           </p>
                         </div>
                         <Presentation className="h-8 w-8 text-purple-500" />
@@ -548,6 +552,211 @@ function App() {
                           </li>
                         </ul>
                       </div>
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          🔄 CCD Meeting – July 23, 2025
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-indigo-500">•</span>
+                            Upper management updates and process improvements
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-indigo-500">•</span>
+                            Beacon patients monitoring (4 cases exceeded)
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-indigo-500">•</span>
+                            Scheduler & queue management updates
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-indigo-500">•</span>
+                            Training program for new agent batch
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          🔄 CCD Meeting – July 24, 2025
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-cyan-500">•</span>
+                            Scheduler coverage and patient classification
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-cyan-500">•</span>
+                            6-month policy reconfirmation
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-cyan-500">•</span>
+                            Visit reason updates implementation
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-cyan-500">•</span>
+                            Continued beacon patients monitoring
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          🔄 CCD Meeting – July 25, 2025
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-rose-500">•</span>
+                            Team concerns and Spanish patient challenges
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-rose-500">•</span>
+                            Process issues and improvement discussions
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-rose-500">•</span>
+                            Provider feedback and booking policies
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-rose-500">•</span>
+                            Quality assurance and training needs
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          ⚙️ Process Standardization – July 28, 2025
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Comprehensive process updates and team restructuring
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            New outbound team structure implementation
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Zone-based patient distribution strategy
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Payment plans and individual performance tracking
+                          </li>
+                        </ul>
+                      </div>
+                      {/* 1. CCD 1st August Meeting Minutes */}
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          📑 Meeting Minutes – August 1, 2025
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Monitoring will continue over the next two weeks; 12
+                            cases only exceeded 4
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            For the 4 new cases, Abanoub will update the team
+                            leaders after the meeting
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Pending: add visit reasons “Eval – Returning
+                            Patient” and “Eval – New Patient” (Mariam)
+                          </li>
+                          <li className="flex flex-col gap-2">
+                            <span className="text-amber-500">•</span>
+                            Teams’ Concerns:
+                            <ul className="list-disc pl-6 text-gray-600 text-sm space-y-1">
+                              <li>
+                                Peter: add no-show Eval patients with status
+                                “unseen” and coordinate with ERP (Abanoub)
+                              </li>
+                              <li>
+                                Mario &amp; Mariam: resolve all provider/patient
+                                issues within 24 hrs
+                              </li>
+                              <li>
+                                Michael: Cerritos office relocation pending
+                                update
+                              </li>
+                              <li>
+                                Abanoub: ERP patient-number discrepancy—waiting
+                                on schedulers &amp; ERP team
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* 2. MD Thomas J Questionnaire */}
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          📝 MD Thomas J Questionnaire
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Physical Health Snapshot: BP/HR readings; current
+                            weight and any recent changes
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Mental Health Check-in: sleep quality, appetite,
+                            mood, energy, focus/attention, hallucinations,
+                            delusions
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Medication &amp; Side Effects: current meds list,
+                            adherence challenges, any new or worsening side
+                            effects
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Health Updates: new diagnoses, new allergies,
+                            discontinued medications
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Safety Screening: thoughts of self-harm or harming
+                            others, with crisis-response instructions
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* 3. August 4 Meeting Minutes */}
+                      <div className="space-y-3">
+                        <h4 className="font-semibold text-lg flex items-center gap-2">
+                          📆 Meeting Minutes – August 4, 2025
+                        </h4>
+                        <ul className="space-y-2 text-sm text-gray-600">
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Attendees: Sylvia, Youssef Boshra, Leah, Mariam,
+                            Ayman, Lilian, Michael Yacoub, Shady Shaker,
+                            Abanoub, Test
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Business Review: Airbnb issues &amp; app
+                            integrations; refine ticket management &amp; Office
+                            Ally→ERP data flow
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Accountability &amp; RACI chart: clarify roles for
+                            schedulers, handlers &amp; PCM; schedulers to tag
+                            patients in ERP
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <span className="text-amber-500">•</span>
+                            Claims &amp; Insurance: ~50% Blue Shield paid; legal
+                            follow-up schedule; report on denied claims
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </CardContent>
                 </Card>
@@ -592,10 +801,6 @@ function App() {
                         <div className="flex items-center gap-1 mb-1">
                           <Calendar className="h-3 w-3" />
                           <span>July 18, 2025</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="h-3 w-3" />
-                          <span>9:00 AM - 10:00 AM</span>
                         </div>
                       </div>
                     </div>
@@ -703,10 +908,6 @@ function App() {
                         <div className="flex items-center gap-1 mb-1">
                           <Calendar className="h-3 w-3" />
                           <span>July 18, 2025</span>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <Clock className="h-3 w-3" />
-                          <span>10:30 AM - 11:30 AM</span>
                         </div>
                       </div>
                     </div>
@@ -1114,6 +1315,392 @@ function App() {
                     </div>
                   </CardContent>
                 </Card>
+                {/* New July Meetings */}
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-indigo-500">
+                  <CardHeader className="bg-gradient-to-r from-indigo-50 to-blue-50">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Users className="h-6 w-6 text-indigo-700" />
+                        <div>
+                          <CardTitle className="text-indigo-700">
+                            CCD Meeting – July 23, 2025
+                          </CardTitle>
+                          <CardDescription className="text-indigo-600">
+                            Upper management updates and process improvements
+                          </CardDescription>
+                        </div>
+                      </div>
+                      <div className="text-right text-sm text-indigo-600">
+                        <div className="flex items-center gap-1 mb-1">
+                          <Calendar className="h-3 w-3" />
+                          <span>July 23, 2025</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>30 minutes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Duration</span>
+                        <Badge variant="outline">30 minutes</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Attendees</span>
+                        <Badge variant="outline">11 participants</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-green-100 text-green-800">
+                          Completed
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Topics</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>
+                          • Upper management updates (discrepancy in numbers)
+                        </li>
+                        <li>• Beacon patients monitoring (4 cases exceeded)</li>
+                        <li>• Scheduler & queue management updates</li>
+                        <li>• Training program for new agent batch</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-cyan-500">
+                  <CardHeader className="bg-gradient-to-r from-cyan-50 to-teal-50">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Users className="h-6 w-6 text-cyan-700" />
+                        <div>
+                          <CardTitle className="text-cyan-700">
+                            CCD Meeting – July 24, 2025
+                          </CardTitle>
+                          <CardDescription className="text-cyan-600">
+                            Scheduler coverage and patient classification
+                          </CardDescription>
+                        </div>
+                      </div>
+                      <div className="text-right text-sm text-cyan-600">
+                        <div className="flex items-center gap-1 mb-1">
+                          <Calendar className="h-3 w-3" />
+                          <span>July 24, 2025</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>30 minutes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Duration</span>
+                        <Badge variant="outline">30 minutes</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Attendees</span>
+                        <Badge variant="outline">7 participants</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-green-100 text-green-800">
+                          Completed
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Topics</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Scheduler coverage (Sara covering for Sameh)</li>
+                        <li>• Patient classification (6-month policy)</li>
+                        <li>• Visit reason updates implementation</li>
+                        <li>• Continued beacon patients monitoring</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-rose-500">
+                  <CardHeader className="bg-gradient-to-r from-rose-50 to-pink-50">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Users className="h-6 w-6 text-rose-700" />
+                        <div>
+                          <CardTitle className="text-rose-700">
+                            CCD Meeting – July 25, 2025
+                          </CardTitle>
+                          <CardDescription className="text-rose-600">
+                            Team concerns and Spanish patient challenges
+                          </CardDescription>
+                        </div>
+                      </div>
+                      <div className="text-right text-sm text-rose-600">
+                        <div className="flex items-center gap-1 mb-1">
+                          <Calendar className="h-3 w-3" />
+                          <span>July 25, 2025</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>50 minutes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Duration</span>
+                        <Badge variant="outline">50 minutes</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Attendees</span>
+                        <Badge variant="outline">7 participants</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-green-100 text-green-800">
+                          Completed
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Topics</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Team concerns and Spanish patient challenges</li>
+                        <li>• Process issues and improvement discussions</li>
+                        <li>• Provider feedback and booking policies</li>
+                        <li>• Quality assurance and training needs</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-amber-500">
+                  <CardHeader className="bg-gradient-to-r from-amber-50 to-yellow-50">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Target className="h-6 w-6 text-amber-700" />
+                        <div>
+                          <CardTitle className="text-amber-700">
+                            Process Standardization – July 28, 2025
+                          </CardTitle>
+                          <CardDescription className="text-amber-600">
+                            Comprehensive process updates and team restructuring
+                          </CardDescription>
+                        </div>
+                      </div>
+                      <div className="text-right text-sm text-amber-600">
+                        <div className="flex items-center gap-1 mb-1">
+                          <Calendar className="h-3 w-3" />
+                          <span>July 28, 2025</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>45 minutes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Duration</span>
+                        <Badge variant="outline">45 minutes</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Attendees</span>
+                        <Badge variant="outline">3 teams</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-yellow-100 text-yellow-800">
+                          In Progress
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Topics</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• New outbound team structure implementation</li>
+                        <li>• Zone-based patient distribution strategy</li>
+                        <li>• Payment plans and follow-up procedures</li>
+                        <li>• Individual performance tracking system</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-emerald-500">
+                  <CardHeader className="bg-gradient-to-r from-emerald-50 to-emerald-100">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <ClipboardList className="h-6 w-6 text-emerald-700" />
+                        <div>
+                          <CardTitle className="text-emerald-700">
+                            Meeting Minutes – August 1, 2025
+                          </CardTitle>
+                          <CardDescription className="text-emerald-600">
+                            Monitoring will continue over the next two weeks; 12
+                            cases exceeded threshold
+                          </CardDescription>
+                        </div>
+                      </div>
+                      <div className="text-right text-sm text-emerald-600">
+                        <div className="flex items-center gap-1 mb-1">
+                          <Calendar className="h-3 w-3" />
+                          <span>Aug 1, 2025</span>
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock className="h-3 w-3" />
+                          <span>45 minutes</span>
+                        </div>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Duration</span>
+                        <Badge variant="outline">45 minutes</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Attendees</span>
+                        <Badge variant="outline">7 people</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-green-100 text-green-800">
+                          Completed
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Topics</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Continue monitoring; 12 cases over threshold</li>
+                        <li>• Abanoub to update team leaders on 4 new cases</li>
+                        <li>
+                          • Pending “Eval – Returning Patient” & “Eval – New
+                          Patient” visit reasons
+                        </li>
+                        <li>
+                          • Teams’ concerns: no-show status, provider issues,
+                          Cerritos relocation, ERP discrepancy
+                        </li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* 2. MD Thomas J Questionnaire */}
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-blue-500">
+                  <CardHeader className="bg-gradient-to-r from-blue-50 to-blue-100">
+                    <div className="flex items-center gap-2">
+                      <Stethoscope className="h-6 w-6 text-blue-700" />
+                      <div>
+                        <CardTitle className="text-blue-700">
+                          MD Thomas J Questionnaire
+                        </CardTitle>
+                        <CardDescription className="text-blue-600">
+                          Comprehensive physical & mental health check
+                          questionnaire
+                        </CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Sections</span>
+                        <Badge variant="outline">5</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Questions</span>
+                        <Badge variant="outline">20+</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          Ready
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Sections</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>• Physical Health Snapshot (BP, HR, Weight)</li>
+                        <li>
+                          • Mental Health Check-in (Sleep, Appetite, Mood,
+                          Energy, Focus, Hallucinations, Delusions)
+                        </li>
+                        <li>• Medication & Side Effects Review</li>
+                        <li>
+                          • Health Updates (New conditions, allergies,
+                          discontinued meds)
+                        </li>
+                        <li>
+                          • Safety Screening (Self-harm or harm to others)
+                        </li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* 3. Meeting Minutes – August 4, 2025 */}
+                <Card className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-violet-500">
+                  <CardHeader className="bg-gradient-to-r from-violet-50 to-violet-100">
+                    <div className="flex items-center gap-2">
+                      <CalendarDays className="h-6 w-6 text-violet-700" />
+                      <div>
+                        <CardTitle className="text-violet-700">
+                          Meeting Minutes – August 4, 2025
+                        </CardTitle>
+                        <CardDescription className="text-violet-600">
+                          Business Review, RACI chart planning & claims
+                          follow-up
+                        </CardDescription>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-4">
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Attendees</span>
+                        <Badge variant="outline">10 people</Badge>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-gray-600">Status</span>
+                        <Badge className="bg-violet-100 text-violet-800">
+                          Completed
+                        </Badge>
+                      </div>
+                    </div>
+                    <div className="mt-4 pt-4 border-t">
+                      <h4 className="font-semibold mb-2">Key Topics</h4>
+                      <ul className="text-sm text-gray-600 space-y-1">
+                        <li>
+                          • Business Review discussion (Airbnb issues, app
+                          integrations, ticket management)
+                        </li>
+                        <li>
+                          • Accountability & RACI chart for schedulers, handlers
+                          & PCM teams
+                        </li>
+                        <li>
+                          • Claims & insurance follow-up with legal team;
+                          denied-claims report
+                        </li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
               </motion.div>
             </TabsContent>
 
@@ -1298,122 +1885,184 @@ function App() {
                     </Button>
                   </CardContent>
                 </Card>
-                {/* Other Presentations Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {/* Sample Presentation 1 */}
-                  <Card className="hover:shadow-lg transition-shadow duration-200 border-orange-200">
-                    <CardHeader className="bg-orange-50">
-                      <CardTitle className="text-orange-700 flex items-center gap-2">
-                        <Building2 className="h-5 w-5" />
-                        Network Strategy
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold mb-2">
-                        Network Accreditation Strategy
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        Strategic roadmap for NCQA accreditation and network
-                        expansion initiatives.
-                      </p>
-                      <div className="flex flex-wrap gap-1 mb-3">
-                        <Badge className="bg-yellow-100 text-yellow-700 text-xs">
-                          In Development
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Sample
-                        </Badge>
-                      </div>
-                      <Button size="sm" variant="outline" className="w-full">
-                        <TestTube className="h-3 w-3 mr-2" />
-                        Preview Sample
-                      </Button>
-                    </CardContent>
-                  </Card>
-
-                  {/* Sample Presentation 2 */}
-                  <Card className="hover:shadow-lg transition-shadow duration-200 border-purple-200">
-                    <CardHeader className="bg-purple-50">
-                      <CardTitle className="flex items-center gap-2">
-                        <Users className="h-5 w-5" />
-                        Patient Management
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold mb-2">
-                        Patient Management Dashboard
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        Real-time patient tracking and care coordination metrics
-                        dashboard.
-                      </p>
-                      <div className="flex flex-wrap gap-1 mb-3">
-                        <Badge className="bg-green-100 text-green-700 text-xs">
-                          Live
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Demo
-                        </Badge>
-                      </div>
-                      <Button size="sm" variant="outline" className="w-full">
-                        <TestTube className="h-3 w-3 mr-2" />
-                        View Demo
-                      </Button>
-                    </CardContent>
-                  </Card>
-
-                  {/* Sample Presentation 3 */}
-                  <Card className="hover:shadow-lg transition-shadow duration-200 border-green-200">
-                    <CardHeader className="bg-green-50">
-                      <CardTitle className="text-green-700 flex items-center gap-2">
-                        <TrendingUp className="h-5 w-5" />
-                        Medicaid Analysis
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent className="p-4">
-                      <h4 className="font-semibold mb-2">
-                        Medicaid Expansion Analysis
-                      </h4>
-                      <p className="text-sm text-gray-600 mb-3">
-                        Comprehensive analysis of Medicaid expansion
-                        opportunities and impact.
-                      </p>
-                      <div className="flex flex-wrap gap-1 mb-3">
-                        <Badge className="bg-gray-100 text-gray-700 text-xs">
-                          Completed
-                        </Badge>
-                        <Badge variant="outline" className="text-xs">
-                          Template
-                        </Badge>
-                      </div>
-                      <Button size="sm" variant="outline" className="w-full">
-                        <TestTube className="h-3 w-3 mr-2" />
-                        View Template
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                {/* Info Note */}
-                <Card className="bg-blue-50 border-blue-200">
-                  <CardContent className="p-4">
-                    <div className="flex items-start gap-3">
-                      <TestTube className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <div>
-                        <h4 className="font-semibold text-blue-800 mb-1">
-                          Sample Presentations
-                        </h4>
-                        <p className="text-sm text-blue-700">
-                          The presentations marked with "Sample", "Demo",
-                          "Template", or "Prototype" badges are examples of what
-                          can be developed for future portal features. These
-                          showcase the potential capabilities and design
-                          patterns for upcoming dashboard implementations.
-                        </p>
-                      </div>
-                    </div>
+                {/* Aug Updates */}
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      CCD Meeting – July 23, 2025
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your CCD Meeting – July 23, 2025.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/ccd_july23.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Open Meeting – July 23, 2025
+                    </Button>
                   </CardContent>
                 </Card>
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      CCD Meeting – July 24, 2025
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your CCD Meeting – July 24, 2025.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/ccd_july24.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Open CCD Meeting – July 24, 2025
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      CCD Meeting – July 25, 2025
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your CCD Meeting – July 25, 2025.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/ccd_july25.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Open CCD Meeting – July 25, 2025
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      CCD Meeting – August 1, 2025
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your CCD Meeting – August 1, 2025.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/ccd_august1.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Open CCD Meeting – August 1, 2025
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      Patient Self-Report Questionnaire
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your Patient Self-Report Questionnaire.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/questionnaire.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Self-Report Questionnaire
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      New Account Inquiry Email
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your New Account Inquiry Email.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/new_account_email.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Open New Account Inquiry Email
+                    </Button>
+                  </CardContent>
+                </Card>
+                <Card className="bg-indigo-50 border-2 border-indigo-200 hover:shadow-xl transition-all duration-300">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2 text-indigo-700">
+                      <ExternalLink className="h-6 w-6" />
+                      Meeting – August 4, 2025
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 mb-4">
+                      A live link to your Meeting – August 4, 2025.
+                    </p>
+                    <Button
+                      className="bg-indigo-600 hover:bg-indigo-700 text-white"
+                      onClick={() =>
+                        window.open(
+                          "https://jouboshra.github.io/Meeting-Documents/meeting_august4.html",
+                          "_blank"
+                        )
+                      }
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Open Meeting – August 4, 2025
+                    </Button>
+                  </CardContent>
+                </Card>
+                {/* Other Presentations Grid */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
               </motion.div>
             </TabsContent>
 
@@ -1438,265 +2087,895 @@ function App() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="space-y-6">
-                    {/* Session 1 Action Items */}
-                    <div className="space-y-3">
-                      <h3 className="font-bold text-orange-700 flex items-center gap-2 text-lg border-b border-orange-200 pb-2">
-                        <Building2 className="h-5 w-5" />
-                        Session 1: Network Accreditation & Expansion (July 18)
+                    {/* Previous Action Items */}
+                    <div className="space-y-4">
+                      <h3 className="font-semibold text-lg border-b pb-2">
+                        Previous July Meetings
                       </h3>
 
-                      {/* Critical Priority */}
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-red-700 flex items-center gap-2">
-                          <AlertTriangle className="h-4 w-4" />
-                          Critical Priority
-                        </h4>
-                        <div className="flex items-center justify-between p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
                           <div className="flex-1">
-                            <p className="font-medium">
-                              Submit NCQA accreditation application
+                            <p className="font-medium text-green-800">
+                              Team performance analysis completed
                             </p>
-                            <p className="text-sm text-gray-600">
-                              Complete and submit network-level accreditation
-                              documentation
+                            <p className="text-sm text-green-600">
+                              Monthly Business Review - June 2025
                             </p>
-                            <p className="text-xs text-red-600 mt-1">
-                              Assigned: Dr. Sarah Johnson | Meeting: Session 1
-                            </p>
-                          </div>
-                          <div className="text-right">
-                            <Badge className="bg-red-100 text-red-700">
-                              Due: July 25
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              5 days left
-                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 15, 2025
+                              </span>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex items-center justify-between p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
-                          <div className="flex-1">
-                            <p className="font-medium">
-                              Implement 24-hour issue resolution policy
-                            </p>
-                            <p className="text-sm text-gray-600">
-                              Establish protocols and staffing for critical
-                              issue response
-                            </p>
-                            <p className="text-xs text-red-600 mt-1">
-                              Assigned: Michael Chen | Meeting: Session 1
-                            </p>
-                          </div>
-                          <div className="text-right">
-                            <Badge className="bg-red-100 text-red-700">
-                              Due: July 22
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              2 days left
-                            </p>
-                          </div>
-                        </div>
-                      </div>
 
-                      {/* Medium Priority */}
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-blue-700 flex items-center gap-2">
-                          <Target className="h-4 w-4" />
-                          Medium Priority
-                        </h4>
-                        <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
                           <div className="flex-1">
-                            <p className="font-medium">
-                              Research Medicaid expansion opportunities
+                            <p className="font-medium text-green-800">
+                              Revenue cycle dashboard implementation
                             </p>
-                            <p className="text-sm text-gray-600">
-                              Analyze potential new states for network expansion
+                            <p className="text-sm text-green-600">
+                              Financial Performance Metrics
                             </p>
-                            <p className="text-xs text-blue-600 mt-1">
-                              Assigned: Lisa Rodriguez | Meeting: Session 1
-                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 17, 2025
+                              </span>
+                            </div>
                           </div>
-                          <div className="text-right">
-                            <Badge className="bg-blue-100 text-blue-700">
-                              Due: August 15
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              25 days left
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              NCQA accreditation pursuit
                             </p>
+                            <p className="text-sm text-yellow-600">
+                              Network Accreditation & Expansion
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                July 18, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-green-800">
+                              Patient retention strategies implemented
+                            </p>
+                            <p className="text-sm text-green-600">
+                              Patient Management & Care Coordination
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 18, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Medicaid expansion planning
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Network Strategy Development
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                July 18, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-green-800">
+                              No-show monitoring system activated
+                            </p>
+                            <p className="text-sm text-green-600">
+                              Patient Management Dashboard
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 18, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Enhanced scheduling processes
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Operational Improvements
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                July 18, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-green-800">
+                              Collection rate improvement achieved (44%)
+                            </p>
+                            <p className="text-sm text-green-600">
+                              Revenue Cycle Optimization
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 17, 2025
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Session 2 Action Items */}
-                    <div className="space-y-3">
-                      <h3 className="font-bold text-purple-700 flex items-center gap-2 text-lg border-b border-purple-200 pb-2">
-                        <Heart className="h-5 w-5" />
-                        Session 2: Patient Management & Care Coordination (July
-                        18)
+                    {/* New Action Items from July Meetings */}
+                    <div className="space-y-4">
+                      <h3 className="font-semibold text-lg border-b pb-2">
+                        New July Meetings (23-28)
                       </h3>
 
-                      {/* High Priority */}
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-orange-700 flex items-center gap-2">
-                          <Clock className="h-4 w-4" />
-                          High Priority
+                      {/* CCD Meeting July 23 Action Items */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-indigo-700">
+                          CCD Meeting - July 23, 2025
                         </h4>
-                        <div className="flex items-center justify-between p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+
+                        <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                          <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
                           <div className="flex-1">
-                            <p className="font-medium">
-                              Develop no-show intervention strategies
+                            <p className="font-medium text-red-800">
+                              Revisit team number calculations
                             </p>
-                            <p className="text-sm text-gray-600">
-                              Create comprehensive patient engagement and
-                              retention protocols
+                            <p className="text-sm text-red-600">
+                              Address discrepancy in numbers with upper
+                              management
                             </p>
-                            <p className="text-xs text-orange-600 mt-1">
-                              Assigned: James Wilson | Meeting: Session 2
-                            </p>
-                          </div>
-                          <div className="text-right">
-                            <Badge className="bg-orange-100 text-orange-700">
-                              Due: July 30
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              10 days left
-                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-red-100 text-red-800">
+                                High Priority
+                              </Badge>
+                              <span className="text-xs text-red-600">
+                                Due: July 30, 2025
+                              </span>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex items-center justify-between p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
                           <div className="flex-1">
-                            <p className="font-medium">
-                              Update scheduler role definitions
+                            <p className="font-medium text-yellow-800">
+                              Address provider concerns with Mr Ayman
                             </p>
-                            <p className="text-sm text-gray-600">
-                              Clarify responsibilities and accountability
-                              measures for scheduling staff
+                            <p className="text-sm text-yellow-600">
+                              Adeshwa Adekunbi refusing age range, MD William
+                              Yee not accepting ADHD PTs
                             </p>
-                            <p className="text-xs text-orange-600 mt-1">
-                              Assigned: Thomas Anderson | Meeting: Session 2
-                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: July 26, 2025
+                              </span>
+                            </div>
                           </div>
-                          <div className="text-right">
-                            <Badge className="bg-orange-100 text-orange-700">
-                              Due: August 5
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              15 days left
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-blue-800">
+                              Educate intake team on provider booking policies
                             </p>
+                            <p className="text-sm text-blue-600">
+                              6-month rule and returning patients process
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: July 25, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                          <Target className="h-5 w-5 text-purple-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-purple-800">
+                              Create new visit reasons
+                            </p>
+                            <p className="text-sm text-purple-600">
+                              Update system with new visit reason categories
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-purple-100 text-purple-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-purple-600">
+                                Due: July 27, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-green-800">
+                              Provide feedback on new shared preferences sheet
+                            </p>
+                            <p className="text-sm text-green-600">
+                              Team feedback collected and documented
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 24, 2025
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
 
-                      {/* Medium Priority */}
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-blue-700 flex items-center gap-2">
-                          <Target className="h-4 w-4" />
-                          Medium Priority
+                      {/* CCD Meeting July 24 Action Items */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-cyan-700">
+                          CCD Meeting - July 24, 2025
                         </h4>
-                        <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
                           <div className="flex-1">
-                            <p className="font-medium">
-                              Enhance beacon patient protocols
+                            <p className="font-medium text-green-800">
+                              Sara covering for Sameh - scheduler coverage
+                              arranged
                             </p>
-                            <p className="text-sm text-gray-600">
-                              Develop specialized care management for high-risk
+                            <p className="text-sm text-green-600">
+                              Temporary coverage implemented successfully
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Completed
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                July 24, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-blue-800">
+                              Reconfirm 6-month policy for patient
+                              classification
+                            </p>
+                            <p className="text-sm text-blue-600">
+                              Ensure all team members understand returning
+                              patient policies
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: July 26, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Implement visit reason updates
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Pending implementation of new visit reasons in
+                              system
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: July 28, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-green-800">
+                              Continue beacon patients monitoring
+                            </p>
+                            <p className="text-sm text-green-600">
+                              Ongoing monitoring of beacon patients maintained
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Ongoing
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                Continuous
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* CCD Meeting July 25 Action Items */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-rose-700">
+                          CCD Meeting - July 25, 2025
+                        </h4>
+
+                        <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                          <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-red-800">
+                              Address Spanish patient challenges
+                            </p>
+                            <p className="text-sm text-red-600">
+                              Develop strategies for handling Spanish-speaking
+                              patient concerns
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-red-100 text-red-800">
+                                High Priority
+                              </Badge>
+                              <span className="text-xs text-red-600">
+                                Due: July 30, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Resolve process issues marked in red
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Address pending process improvements identified in
+                              meeting
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: July 29, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-blue-800">
+                              Implement provider feedback system
+                            </p>
+                            <p className="text-sm text-blue-600">
+                              Create formal process for collecting and
+                              addressing provider concerns
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: August 1, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                          <Target className="h-5 w-5 text-purple-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-purple-800">
+                              Enhance quality assurance training
+                            </p>
+                            <p className="text-sm text-purple-600">
+                              Develop additional training modules for quality
+                              improvement
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-purple-100 text-purple-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-purple-600">
+                                Due: August 5, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+                          <Users className="h-5 w-5 text-orange-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-orange-800">
+                              Review booking policies with providers
+                            </p>
+                            <p className="text-sm text-orange-600">
+                              Ensure all providers understand and follow booking
+                              guidelines
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-orange-100 text-orange-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-orange-600">
+                                Due: July 31, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Process Standardization July 28 Action Items */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-amber-700">
+                          Process Standardization - July 28, 2025
+                        </h4>
+
+                        <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                          <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-red-800">
+                              Implement new outbound team structure
+                            </p>
+                            <p className="text-sm text-red-600">
+                              Restructure outbound team to handle all outbound
+                              calls, cases, missed calls, RST and voicemails
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-red-100 text-red-800">
+                                High Priority
+                              </Badge>
+                              <span className="text-xs text-red-600">
+                                Due: August 2, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Finalize Lorine's review of intake form questions
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Complete review and approval of new intake form
+                              questions
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: July 30, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-blue-800">
+                              Update availability sheet with provider capacity
+                              tracking
+                            </p>
+                            <p className="text-sm text-blue-600">
+                              Include date of joining, exceptions, and provider
+                              capacity in availability sheet
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: August 1, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                          <Target className="h-5 w-5 text-purple-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-purple-800">
+                              Implement individual performance incentive scheme
+                            </p>
+                            <p className="text-sm text-purple-600">
+                              Develop and implement individual performance
+                              tracking and incentive system
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-purple-100 text-purple-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-purple-600">
+                                Due: August 5, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {/* MON_$_AUG2025 */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-emerald-700">
+                          Meeting Minutes – August 1, 2025 Action Items
+                        </h4>
+
+                        <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                          <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-red-800">
+                              Abanoub to update team leaders on the 4 new Beacon
+                              cases
+                            </p>
+                            <p className="text-sm text-red-600">
+                              Notify leaders of patient exceedances and next
+                              steps
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-red-100 text-red-800">
+                                High Priority
+                              </Badge>
+                              <span className="text-xs text-red-600">
+                                Due: August 3, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Mariam to add “Eval – Returning Patient” & “Eval –
+                              New Patient” visit reasons
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Update system visit codes for returning and new
                               patients
                             </p>
-                            <p className="text-xs text-blue-600 mt-1">
-                              Assigned: Dr. Emily Carter | Meeting: Session 2
-                            </p>
-                          </div>
-                          <div className="text-right">
-                            <Badge className="bg-blue-100 text-blue-700">
-                              Due: August 20
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              30 days left
-                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: August 4, 2025
+                              </span>
+                            </div>
                           </div>
                         </div>
-                        <div className="flex items-center justify-between p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
                           <div className="flex-1">
-                            <p className="font-medium">
-                              Streamline intake processes
+                            <p className="font-medium text-blue-800">
+                              Abanoub & ERP team to implement “unseen” status
+                              for no-show eval patients
                             </p>
-                            <p className="text-sm text-gray-600">
-                              Optimize patient onboarding and initial assessment
-                              workflows
+                            <p className="text-sm text-blue-600">
+                              Coordinate with schedulers to tag unseen cases in
+                              ERP
                             </p>
-                            <p className="text-xs text-blue-600 mt-1">
-                              Assigned: David Kim | Meeting: Session 2
-                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: August 6, 2025
+                              </span>
+                            </div>
                           </div>
-                          <div className="text-right">
-                            <Badge className="bg-blue-100 text-blue-700">
-                              Due: September 1
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              42 days left
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                          <Target className="h-5 w-5 text-purple-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-purple-800">
+                              Mario & Mariam to resolve all provider/patient
+                              issues within 24 hours
                             </p>
+                            <p className="text-sm text-purple-600">
+                              Escalate complex cases to leadership as needed
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-purple-100 text-purple-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-purple-600">
+                                Due: August 2, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* MD Thomas J Questionnaire Action Items */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-blue-700">
+                          MD Thomas J Questionnaire Action Items
+                        </h4>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Finalize questionnaire sections and layout
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Ensure all five domains and prompts are reviewed
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: August 5, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-blue-800">
+                              Distribute form to patients before appointments
+                            </p>
+                            <p className="text-sm text-blue-600">
+                              Send via portal and provide paper copies at
+                              check-in
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: August 7, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                          <Target className="h-5 w-5 text-purple-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-purple-800">
+                              Train staff on administering the health check
+                              questionnaire
+                            </p>
+                            <p className="text-sm text-purple-600">
+                              Hold a short workshop and distribute quick-start
+                              guide
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-purple-100 text-purple-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-purple-600">
+                                Due: August 8, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                          <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-green-800">
+                              Integrate completed questionnaires into patient
+                              records
+                            </p>
+                            <p className="text-sm text-green-600">
+                              Work with IT to map fields into the EMR
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-green-100 text-green-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-green-600">
+                                Due: August 10, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Meeting Minutes – August 4, 2025 Action Items */}
+                      <div className="space-y-3">
+                        <h4 className="font-medium text-violet-700">
+                          Meeting Minutes – August 4, 2025 Action Items
+                        </h4>
+
+                        <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                          <Clock className="h-5 w-5 text-yellow-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-yellow-800">
+                              Sylvia to prepare for Business Review and
+                              integrate Office Ally data
+                            </p>
+                            <p className="text-sm text-yellow-600">
+                              Compile and format data for ERP ingestion
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-yellow-100 text-yellow-800">
+                                In Progress
+                              </Badge>
+                              <span className="text-xs text-yellow-600">
+                                Due: August 6, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                          <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-blue-800">
+                              Michael to draft the RACI chart; schedulers to tag
+                              patients in ERP
+                            </p>
+                            <p className="text-sm text-blue-600">
+                              Define and assign roles within the system
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-blue-100 text-blue-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-blue-600">
+                                Due: August 7, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                          <AlertTriangle className="h-5 w-5 text-red-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-red-800">
+                              Ayman & Nivin to coordinate with legal team on
+                              claims status
+                            </p>
+                            <p className="text-sm text-red-600">
+                              Expedite denials and underpayments resolution
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-red-100 text-red-800">
+                                High Priority
+                              </Badge>
+                              <span className="text-xs text-red-600">
+                                Due: August 5, 2025
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                          <Target className="h-5 w-5 text-purple-600 mt-0.5" />
+                          <div className="flex-1">
+                            <p className="font-medium text-purple-800">
+                              Sylvia to compile a report on denied claims for
+                              further analysis
+                            </p>
+                            <p className="text-sm text-purple-600">
+                              Include denial reasons and volumes by provider
+                            </p>
+                            <div className="flex items-center gap-2 mt-2">
+                              <Badge className="bg-purple-100 text-purple-800">
+                                Pending
+                              </Badge>
+                              <span className="text-xs text-purple-600">
+                                Due: August 8, 2025
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    {/* Revenue Cycle Dashboard Action Items */}
-                    <div className="space-y-3">
-                      <h3 className="font-bold text-teal-700 flex items-center gap-2 text-lg border-b border-teal-200 pb-2">
-                        <DollarSign className="h-5 w-5" />
-                        Revenue Cycle Dashboard (July 17)
+                    {/* Summary Statistics */}
+                    <div className="mt-8 pt-6 border-t">
+                      <h3 className="font-semibold text-lg mb-4">
+                        Summary Statistics
                       </h3>
-
-                      {/* High Priority */}
-                      <div className="space-y-2">
-                        <h4 className="font-semibold text-orange-700 flex items-center gap-2">
-                          <Clock className="h-4 w-4" />
-                          High Priority
-                        </h4>
-                        <div className="flex items-center justify-between p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
-                          <div className="flex-1">
-                            <p className="font-medium">
-                              Complete time audit for billing team
-                            </p>
-                            <p className="text-sm text-gray-600">
-                              Track biller time for several days to spot delays
-                              and inefficiencies
-                            </p>
-                            <p className="text-xs text-orange-600 mt-1">
-                              Assigned: Revenue Team Lead | Meeting: Revenue
-                              Cycle
-                            </p>
+                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                          <div className="text-2xl font-bold text-green-600">
+                            14
                           </div>
-                          <div className="text-right">
-                            <Badge className="bg-orange-100 text-orange-700">
-                              Due: July 28
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              8 days left
-                            </p>
+                          <div className="text-sm text-gray-600">Completed</div>
+                        </div>
+                        <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                          <div className="text-2xl font-bold text-yellow-600">
+                            7
+                          </div>
+                          <div className="text-sm text-gray-600">
+                            In Progress
                           </div>
                         </div>
-                        <div className="flex items-center justify-between p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
-                          <div className="flex-1">
-                            <p className="font-medium">
-                              Conduct error audit on claims
-                            </p>
-                            <p className="text-sm text-gray-600">
-                              Review sample of 50 claims per biller to map error
-                              types
-                            </p>
-                            <p className="text-xs text-orange-600 mt-1">
-                              Assigned: Quality Assurance Team | Meeting:
-                              Revenue Cycle
-                            </p>
+                        <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                          <div className="text-2xl font-bold text-red-600">
+                            10
                           </div>
-                          <div className="text-right">
-                            <Badge className="bg-orange-100 text-orange-700">
-                              Due: August 2
-                            </Badge>
-                            <p className="text-xs text-gray-500 mt-1">
-                              12 days left
-                            </p>
+                          <div className="text-sm text-gray-600">
+                            High Priority
+                          </div>
+                        </div>
+                        <div className="text-center p-4 bg-white rounded-lg shadow-sm">
+                          <div className="text-2xl font-bold text-purple-600">
+                            78%
+                          </div>
+                          <div className="text-sm text-gray-600">
+                            Completion Rate
                           </div>
                         </div>
                       </div>
@@ -1714,6 +2993,7 @@ function App() {
 
       {/* Floating Chat Component */}
       <AIAssistant meetingData={currentMeetingData} onGuideMe={handleGuideMe} />
+      <Analytics />
     </div>
   );
 }
